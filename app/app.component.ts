@@ -1,6 +1,24 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
+
 @Component({
-  selector: 'running',
-  template: '<h1>Running of the Wolves</h1><img src="/images/pawprint.jpg" alt="Liberty Pines Running of the Wolves"/>'
+    directives: [ROUTER_DIRECTIVES],
+    providers: [Location],
+    selector: 'my-app',
+    styles: [`h1 {
+	color: white;
+	background: darkgray;
+	padding: 20px;
+}
+`],
+    template: `
+<h1>My First {{name}} app</h1>
+<router-outlet></router-outlet>
+
+<a [routerLink]="['/']">Home</a> | <a [routerLink]="['/about']">About</a>`,
 })
-export class AppComponent { }
+export class AppComponent {
+    name: string = "Angular 2 on Express";
+
+    constructor() {}
+}
