@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     styleUrls: ['components/about/about.component.css']
 })
 export class AboutComponent {
-    name: string = "About Us";
+    name: string = "About The Race";
 
     constructor() {}
 }

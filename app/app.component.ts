@@ -18,7 +18,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 <a [routerLink]="['/']">Home</a> | <a [routerLink]="['/about']">About</a>`,
 })
 export class AppComponent {
-    name: string = "Angular 2 on Express";
+    name: string = "Running of the Wolves";
 
     constructor() {}
 }
