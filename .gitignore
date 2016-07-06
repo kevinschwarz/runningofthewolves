@@ -1,10 +1,8 @@
 node_modules
-app/**/*.js
-app/**/*.js.map
-typings
-npm-debug.log
-public/ng2
-*.bak
 .idea
-*.iml
-*.ipr
+typings
+server/**/*.js
+server/**/*.js.map
+client/**/*.js
+client/**/*.js.map
+/npm-debug.log
