@@ -12,7 +12,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 }
 `],
     template: `
-<h1>My First {{name}} app</h1>
+<h1>{{name}} app</h1>
 <router-outlet></router-outlet>
 
 <a [routerLink]="['/']">Home</a> | <a [routerLink]="['/about']">About</a>`,
