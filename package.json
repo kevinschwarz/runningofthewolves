@@ -10,8 +10,8 @@
     "twc:server:w": "tsc -w -p ./server",
     "typings": "typings install",
     "bundle": "node tools/builder.js",
-    "bundle:prod": "node tools/builder.js --prod",
-    "postinstall": "typings install && tsc -w -p ./server"
+    "bundle:prod": "node tools/builder.js --dev",
+    "postinstall": "typings install && tsc -p ./server"
   },
   "engines": {
     "node": ">= 5.4.1 < 6"
