@@ -1,10 +1,18 @@
 <html>
     <head>
         <title>Running of the Wolves</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href=".">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
         <!-- IE required polyfills, in this exact order -->
@@ -14,6 +22,9 @@
         <script src="assets/js/vendor/Reflect.js"></script>
         <script src="assets/js/vendor/system.js"></script>
         <script src="assets/js/vendor/jquery.min.js"></script>
+
+         <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
         <!-- 2. Configure SystemJS -->
         <!-- Development mod 
@@ -25,11 +36,8 @@
 
     <body>
         <app>
-            <div class="ui active inverted dimmer">
-                <div class="ui small loader"></div>
-            </div>
         </app>
-        <!--  Production mod          --> 
+        <!--Production mod --> 
         <script src="assets/js/bundle.min.js"></script>
 
     </body>
