@@ -18,7 +18,7 @@ const routes: RouterConfig = [
     { path: 'event_information', component: <Type>EventInformationComponent },
     { path: 'photos', component: <Type>PhotosComponent },
     { path: 'results', component: <Type>ResultsComponent },
-    { path: 'sponsors', component: <Type>SponsorsComponent }
+    { path: 'sponsors', component: <Type>SponsorsComponent },
     { path: 'pto', component: <Type>PtoComponent }
 ];
 

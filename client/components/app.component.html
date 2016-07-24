@@ -1,11 +1,4 @@
-import { Component } from "@angular/core";
-import {Router, ROUTER_DIRECTIVES, Event, NavigationEnd} from '@angular/router';
-
-@Component({
-    directives: [ROUTER_DIRECTIVES],
-    selector: "app",
-    providers: [],
-    template: `<div class="ui container">
+<div class="ui container">
         <div class="row">
             <div class="col-md-3 text-center" style="padding-bottom: 25px;">
                 <img src="/assets/img/pawprint.jpg" width="150" hieght="150" alt="paw print" />
@@ -44,17 +37,4 @@ import {Router, ROUTER_DIRECTIVES, Event, NavigationEnd} from '@angular/router';
             </div>
         </nav>
         <router-outlet></router-outlet>        
-    </div>`
-});
-
-declare let ga:Function;
-export class AppComponent {
-   constructor(public router:Router) {
-        this.router.events.subscribe(
-            (event:Event) => {
-                if (event instanceof NavigationEnd) {
-                    ga('send', 'pageview', event.urlAfterRedirects);
-                }
-           });
-   }
-}
+    </div>
