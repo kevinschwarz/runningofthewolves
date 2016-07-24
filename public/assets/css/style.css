@@ -2,3 +2,7 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+#course {
+	border: 2px black solid; 
+}
