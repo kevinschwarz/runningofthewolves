@@ -1,2 +1,2 @@
- - Implement express-jwt on server side.
- - Implement angular2-jwt on client side.
+git update-index --no-assume-unchanged
+git update-index --assume-unchanged
