@@ -13,7 +13,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
             <div class="col-md-9">
                 <h1>Running of the Wolves 5K and 1 Mile Fun Run</h1>
                 <h4>Liberty Pines Academy PTO 5K Race Event</h4>
-                <h4>October 16, 2016</h4>
+                <h4>October 16<sup>th</sup>, 2016</h4>
             </div>
         </div>
         <nav class="navbar navbar-default" role="navigation">
