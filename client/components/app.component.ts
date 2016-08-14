@@ -1,5 +1,9 @@
 import { Component } from "@angular/core";
-import { ROUTER_DIRECTIVES } from '@angular/router';
+//import { ROUTER_DIRECTIVES } from '@angular/router';
+
+import {Router, ROUTER_DIRECTIVES, Event, NavigationEnd} from '@angular/router';
+declare let ga:Function;
+
 
 @Component({
     directives: [ROUTER_DIRECTIVES],
@@ -47,4 +51,15 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
     </div>`
 })
 
-export class AppComponent {}
+export class AppComponent {
+    
+    constructor(public router:Router) {
+        this.router.events.subscribe(
+            (event:Event) => {
+                if (event instanceof NavigationEnd) {
+                    ga('send', 'pageview', event.urlAfterRedirects);
+                }
+            });
+    }    
+
+}
