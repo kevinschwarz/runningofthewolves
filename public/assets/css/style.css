@@ -6,3 +6,18 @@ body {
 #course {
 	border: 2px black solid; 
 }
+
+.panel-default > .panel-heading-silver {
+	background: #C0C0C0; 
+	color: #fff; 
+}
+
+.panel-default > .panel-heading-bronze {
+	background: #8c7853; 
+	color: #fff; 
+}
+
+.panel-default > .panel-heading-wolf-den {
+	background: #2f5b82; 
+	color: #fff; 
+}
