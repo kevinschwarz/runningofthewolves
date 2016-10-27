@@ -19,6 +19,7 @@
   "author": "Kevin Schwarz",
   "license": "MIT",
   "dependencies": {
+    "lightbox2": "2.8.2",
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
     "express": "^4.13.4",
