@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/ie10-viewport-bug-workaround.css">
         <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/vendor/swipebox.min.css">
 
         <!-- IE required polyfills, in this exact order -->
         <!-- Polyfill(s) for older browsers -->
@@ -23,11 +24,18 @@
          <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+        <!-- Development mod -->
+        <script src="assets/js/systemjs.config.js"></script>
+        <script>
+            System.import('app').catch(function(err) { console.error(err); });
+        </script>
     </head>
     <body>
         <app>
-        </app>  
+        </app>
+        <!--Production mode  
         <script src="assets/js/bundle.min.js"></script>
+        -->        
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -36,6 +44,12 @@
 
             ga('create', 'UA-81205595-1', 'auto');
             ga('send', 'pageview');
+        </script>
+        <script src="assets/js/vendor/jquery.swipebox.min.js"></script>
+        <script>
+            ;( function( $ ) {
+                $( '.swipebox' ).swipebox();
+            } )( jQuery );
         </script>
     </body>
 </html>
